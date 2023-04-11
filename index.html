@@ -39,8 +39,8 @@
           </div>
 
           <div class="button-group">
-            <button @click="reset" type="button">Reset</button>
-            <button type="button">Copy</button>
+            <button type="button" @click.prevent="reset">Reset</button>
+            <button type="button" @click.prevent="copy">Copy</button>
           </div>
         </div>
       </section>
@@ -48,6 +48,10 @@
       <section class="output">
         <div class="box-container">
           <div class="box" :style="box"></div>
+        </div>
+        
+        <div class="messagebox">
+          <!-- <p class="message">{{ message }}</p> -->
         </div>
       </section>
     </main>

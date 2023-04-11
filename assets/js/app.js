@@ -5,6 +5,7 @@ Vue.createApp({
       rotateX: 0,
       rotateY: 0,
       rotateZ: 0,
+      // message: ''
     }
   },
   computed: {
@@ -25,6 +26,13 @@ Vue.createApp({
       this.rotateX = 0
       this.rotateY = 0
       this.rotateZ = 0
+    },
+    async copy() {
+      let text = `transform: ${this.box.transform}`
+      await navigator.clipboard.writeText(text)
+
+      // this.message = 'CSS Copied to Clipboard!'
+      alert('CSS Copied to Clipboard!')
     }
   },
 }).mount('#app')
