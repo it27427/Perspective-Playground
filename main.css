@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
 :root {
   --primary-color: hsl(246, 83%, 73%);
   --btn-hover-bg: hsl(246, 34%, 43%);
   --body-bg: hsl(266, 29%, 15%);
   --white: hsl(0, 0%, 100%);
+  --primary-font: 'Nunito', sans-serif;
 }
 
 html {
@@ -20,7 +23,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: var(--primary-font);
   height: 100%;
   margin: 0;
   background: var(--body-bg);
@@ -45,7 +48,7 @@ main {
   height: 26.25rem;
   max-width: 48rem;
   margin: 0 auto;
-  font-family: monospace, sans-serif;
+  font-family: var(--primary-font);
   font-size: 1.375rem;
 }
 
