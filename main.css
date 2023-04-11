@@ -1,0 +1,103 @@
+:root {
+  --primary-color: hsl(246, 83%, 73%);
+  --btn-hover-bg: hsl(246, 34%, 43%);
+  --body-bg: hsl(266, 29%, 15%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  background: var(--body-bg);
+  overflow: hidden;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin: 1.25rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 26.25rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  font-family: monospace, sans-serif;
+  font-size: 1.375rem;
+}
+
+main label{
+  display: block;
+}
+
+main input[type="range"] {
+  display: block;
+  margin-bottom: .625rem;
+  width: 12.5rem;
+}
+
+section.settings {
+  width: 50%;
+  z-index: 2;
+}
+
+.box-container {
+  padding: 3.125rem;
+  border: .0625rem solid var(--primary-color);
+}
+
+.box {
+  width: 9.375rem;
+  height: 9.375rem;
+  background: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: .625rem;
+  outline: none;
+  border: none;
+  margin-right: .625rem;
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  transition: 250ms ease-in;
+}
+
+button:hover {
+  background: var(--btn-hover-bg);
+}
+
+label{
+  color: var(--white);
+}
+
+input[type="range"] {
+  cursor: pointer;
+}
